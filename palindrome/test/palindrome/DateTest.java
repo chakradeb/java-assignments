@@ -1,3 +1,5 @@
+package palindrome;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -23,6 +25,6 @@ public class DateTest {
         Date expected = Date.CreateDate("10/02/2011");
 
         Date reversedDate = date1.ReverseDate();
-        assertEquals(reversedDate, expected);
+        assertEquals("Invalid reverse date", reversedDate, expected);
     }
 }

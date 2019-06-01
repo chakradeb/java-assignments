@@ -1,3 +1,5 @@
+package palindrome;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
@@ -23,7 +25,7 @@ public class Date {
                     date.getYear()
             );
         }
-        throw new InvalidDateFormatException("Invalid date format given");
+        throw new palindrome.InvalidDateFormatException("Invalid date format given");
     }
 
     public Date ReverseDate() {
